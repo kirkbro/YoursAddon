@@ -1,0 +1,5 @@
+<Bindings>
+  <Binding name="CLICK YoursPlaceBidButton:LeftButton"/>
+  <Binding name="CLICK YoursPlaceAskButton:LeftButton"/>
+  <Binding name="CLICK YoursCreateTileButton:LeftButton"/>
+</Bindings>

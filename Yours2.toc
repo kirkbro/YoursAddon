@@ -1,0 +1,11 @@
+## Interface: 90207
+## Title: Yours2
+## Version: 0.1
+## Author: mekirk
+## Notes: EBS keyboard meets WoW
+## SavedVariables: YoursTileSettings
+
+bindings.lua
+trading.lua
+commodity-tile.lua
+yours.lua
