@@ -1,0 +1,22 @@
+## Interface: 110002
+## Title: Yours
+## Version: 1.0
+## Author: mekirk
+## Notes: EBS keypad meets WoW
+## SavedVariables: YoursSettings
+
+util.lua
+trading.lua
+
+widgets/titlebar.lua
+widgets/buy-sell-tile.lua
+widgets/dealing-tile.lua
+widgets/book-tile.lua
+widgets/options-tile.lua
+widgets/trading-window.lua
+
+algos/fixed-buy.lua
+algos/dynamic-buy.lua
+algos/fixed-sell.lua
+
+yours.lua

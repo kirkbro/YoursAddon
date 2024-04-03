@@ -1,5 +1,21 @@
 <Bindings>
-  <Binding name="CLICK YoursPlaceBidButton:LeftButton"/>
-  <Binding name="CLICK YoursPlaceAskButton:LeftButton"/>
-  <Binding name="CLICK YoursCreateTileButton:LeftButton"/>
+  <Binding name="YOURS_BUY">
+    Yours:Buy()
+  </Binding>
+
+  <Binding name="YOURS_SELL">
+    Yours:Sell()
+  </Binding>
+
+  <Binding name="YOURS_TOGGLE_SHOW_WINDOWS">
+    Yours:ToggleShowWindows()
+  </Binding>
+
+  <Binding name="YOURS_CLOSE_WINDOWS">
+    Yours:CloseWindows()
+  </Binding>
+
+  <Binding name="YOURS_CREATE_TRADING_WINDOW">
+    Yours:CreateTradingWindowFromHover()
+  </Binding>
 </Bindings>
