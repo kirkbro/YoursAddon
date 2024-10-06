@@ -8,15 +8,15 @@
 util.lua
 trading.lua
 
+algos/fixed-buy.lua
+algos/dynamic-buy.lua
+algos/fixed-sell.lua
+
 widgets/titlebar.lua
 widgets/buy-sell-tile.lua
 widgets/dealing-tile.lua
 widgets/book-tile.lua
 widgets/options-tile.lua
 widgets/trading-window.lua
-
-algos/fixed-buy.lua
-algos/dynamic-buy.lua
-algos/fixed-sell.lua
 
 yours.lua
