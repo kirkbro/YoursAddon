@@ -1,6 +1,6 @@
 ## Interface: 110002
 ## Title: Yours
-## Version: 1.0
+## Version: 1.1
 ## Author: mekirk
 ## Notes: EBS keypad meets WoW
 ## SavedVariables: YoursSettings
