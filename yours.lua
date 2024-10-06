@@ -28,9 +28,6 @@ function Yours.frame:OnEvent(event, arg1)
     YoursSettings.defaultCustoms = YoursSettings.defaultCustoms or {
       TRADING_WINDOW = {},
     }
-
-    Yours:LoadWindows()
-    Yours:HideWindows()
   elseif event == "PLAYER_LOGOUT" then
     -- Clear windows: we want to overwrite it entirely
     YoursSettings.windows = {}
@@ -58,6 +55,7 @@ Yours.frame:SetScript("OnEvent", Yours.frame.OnEvent);
 
 Yours.windows = {}
 Yours.activeWindow = nil
+Yours.areWindowsLoaded = false
 Yours.areWindowsShown = false
 
 function Yours:CreateTradingWindow(settings)
@@ -120,12 +118,20 @@ function Yours:CreateTradingWindowFromHover()
 end
 
 function Yours:LoadWindows()
+  -- Idempotency guard
+  if Yours.areWindowsLoaded then
+    return
+  end
+  Yours.areWindowsLoaded = true
+
   for _, settings in ipairs(YoursSettings.windows) do
     Yours:CreateTradingWindow(settings)
   end
 end
 
 function Yours:ShowWindows()
+  Yours:LoadWindows() -- Idempotent
+
   self.areWindowsShown = true
   for _, window in ipairs(Yours.windows) do
     window:Show()
